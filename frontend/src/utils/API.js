@@ -1,1 +1,1 @@
-export const BASE_URL = "https://ai-notes-summarizer-9oru.onrender.com/"
+export const BASE_URL = "https://ai-notes-summarizer-9oru.onrender.com"
