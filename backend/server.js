@@ -11,9 +11,12 @@ import emailRoutes from "./routes/emailRoutes.js";
 const app = express();
 
 
-
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: ["https://ai-notes-summarizer-eta.vercel.app/"], // frontend URL
+  methods: ["GET", "POST"],
+  credentials: true
+}));
 app.use(express.json());
 
 // Routes
