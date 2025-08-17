@@ -13,7 +13,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ["https://ai-notes-summarizer-eta.vercel.app/"], // frontend URL
+  origin: ["https://ai-notes-summarizer-eta.vercel.app"], // frontend URL
   methods: ["GET", "POST"],
   credentials: true
 }));
