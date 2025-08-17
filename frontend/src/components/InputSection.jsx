@@ -37,7 +37,7 @@ const InputSection = () => {
             }
             formData.append("prompt", prompt);
 
-            const response = await fetch(`${BASE_URL}/summarize`, {
+            const response = await fetch(`${BASE_URL}/api/summarize`, {
                 method: "POST",
                 body: formData
             })
@@ -68,7 +68,7 @@ const InputSection = () => {
         setLoadingEmail(true);
         try {
             const formattedEmails = emails.split(",").map(e => e.trim()).join(",");
-            const response = await fetch(`${BASE_URL}/send-email`, {
+            const response = await fetch(`${BASE_URL}/api/send-email`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
